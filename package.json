@@ -4,16 +4,24 @@
   "description": "Boilerplate for the Quality Assurance and Testing with Chai challenges",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "mocha tests/ --timeout 5000 --ui tdd"
   },
   "dependencies": {
     "body-parser": "1.19.0",
-    "chai": "4.3.4",
-    "chai-http": "4.3.0",
+    "chai-http": "^4.3.0",
     "cors": "2.8.5",
     "express": "4.17.1",
-    "mocha": "9.0.3",
     "zombie": "6.1.4"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "directories": {
+    "test": "tests"
+  },
+  "keywords": [],
+  "author": "",
+  "devDependencies": {
+    "chai": "^4.3.0",
+    "mocha": "^11.7.5"
+  }
 }
